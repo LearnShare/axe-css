@@ -1,0 +1,57 @@
+// size
+$size-s: 1px;
+$size-m: 2px;
+$size-l: 3px;
+$size-xl: 4px;
+// size-corner
+$size-corner-s: $size-s * 2;
+$size-corner-m: $size-m * 2;
+$size-corner-l: $size-l * 2;
+$size-corner-xl: $size-xl * 2;
+// size-a
+$size-a-s: $size-s * 4 + 4;
+$size-a-m: $size-m * 4 + 4;
+$size-a-l: $size-l * 4 + 4;
+$size-a-xl: $size-xl * 4 + 4;
+// size-b
+$size-b-s: $size-s * 4 + 8;
+$size-b-m: $size-m * 4 + 8;
+$size-b-l: $size-l * 4 + 8;
+$size-b-xl: $size-xl * 4 + 8;
+// size-c
+$size-c-s: $size-s * 6 + 12;
+$size-c-m: $size-m * 6 + 12;
+$size-c-l: $size-l * 6 + 12;
+$size-c-xl: $size-xl * 6 + 12;
+// size-d
+$size-d-s: $size-s * 12 + 12;
+$size-d-m: $size-m * 12 + 12;
+$size-d-l: $size-l * 12 + 12;
+$size-d-xl: $size-xl * 12 + 12;
+
+:root {
+  --size-s: $size-s;
+  --size-m: $size-m;
+  --size-l: $size-l;
+  --size-xl: $size-xl;
+  --size-corner-s: $size-corner-s;
+  --size-corner-m: $size-corner-m;
+  --size-corner-l: $size-corner-l;
+  --size-corner-xl: $size-corner-xl;
+  --size-a-s: $size-a-s;
+  --size-a-m: $size-a-m;
+  --size-a-l: $size-a-l;
+  --size-a-xl: $size-a-xl;
+  --size-b-s: $size-b-s;
+  --size-b-m: $size-b-m;
+  --size-b-l: $size-b-l;
+  --size-b-xl: $size-b-xl;
+  --size-c-s: $size-c-s;
+  --size-c-m: $size-c-m;
+  --size-c-l: $size-c-l;
+  --size-c-xl: $size-c-xl;
+  --size-d-s: $size-d-s;
+  --size-d-m: $size-d-m;
+  --size-d-l: $size-d-l;
+  --size-d-xl: $size-d-xl;
+}

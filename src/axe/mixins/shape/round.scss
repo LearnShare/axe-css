@@ -1,0 +1,9 @@
+@import '../../variables.scss';
+
+@mixin round(
+  $diameter: $size-d-l,
+) {
+  border-radius: 50%;
+  width: $diameter;
+  height: $diameter;
+}

@@ -1,0 +1,11 @@
+@import '../../variables.scss';
+
+@mixin rectangle(
+  $x: $size-d-l,
+  $y: $x,
+  $corner: 0,
+) {
+  border-radius: $corner;
+  width: $x;
+  height: $y;
+}

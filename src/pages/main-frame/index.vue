@@ -55,6 +55,7 @@ export default {
 
   main {
     flex: 1;
+    padding: 12px;
   }
 }
 </style>
