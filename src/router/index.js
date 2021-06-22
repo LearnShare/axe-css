@@ -12,8 +12,8 @@ const router = createRouter({
       component: () => import('../pages/main-frame/index.vue'),
     },
     {
-      name: '404',
-      path: '/:catchAll(.*)',
+      name: 'default',
+      path: '/:path',
       component: () => import('../pages/main-frame/index.vue'),
     },
   ],
