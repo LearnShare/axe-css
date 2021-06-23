@@ -1,1 +1,17 @@
 @import "./size.scss";
+
+:root {
+  // sizes
+  @include spreadMap($sizes);
+  @include spreadMap(generateSizes(2), "corner");
+  @include spreadMap(generateSizes(4, 4), "a");
+  @include spreadMap(generateSizes(8, 12), "b");
+  @include spreadMap(generateSizes(12, 12), "c");
+  @include spreadMap(generateSizes(16, 24), "d");
+
+  // fonts
+  --font-ui: -apple-system, system-ui, "SF Pro", "Segoe UI", "Roboto", ui-sans-serif;
+  --font-zh: "SF Pro SC", "PingFang SC", "Helvetica Neue", "Helvetica", "Microsoft Yahei UI", "Microsoft Yahei", "Noto Sans Han", sans-serif;
+  --font-en: "SF Pro", "Segoe UI", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+  --font-mono: "Monaco", "SF Mono", "Source Code Pro", "Consolas", monospace;
+}

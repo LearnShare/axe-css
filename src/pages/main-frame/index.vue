@@ -35,6 +35,10 @@ export default {
           return defineAsyncComponent(
             () => import('@/components/size/index'),
           );
+        case 'font':
+          return defineAsyncComponent(
+            () => import('@/components/font/index'),
+          );
         default:
           return defineAsyncComponent(
             () => import('@/components/404/index'),
@@ -55,11 +59,13 @@ export default {
   aside {
     width: 240px;
     background-color: #F5F5F5;
+    overflow: auto;
   }
 
   main {
     flex: 1;
     padding: 12px;
+    overflow: auto;
   }
 }
 </style>

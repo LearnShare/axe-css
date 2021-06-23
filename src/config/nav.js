@@ -21,6 +21,10 @@ const navList = [
     ],
   },
   {
+    label: 'Font',
+    value: 'font',
+  },
+  {
     label: 'Layout',
     value: 'layout',
   },
