@@ -31,6 +31,10 @@ export default {
           return defineAsyncComponent(
             () => import('@/components/shape/index'),
           );
+        case 'size':
+          return defineAsyncComponent(
+            () => import('@/components/size/index'),
+          );
         default:
           return defineAsyncComponent(
             () => import('@/components/404/index'),

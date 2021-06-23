@@ -9,7 +9,7 @@ $sizes: (
 
 @mixin spreadMap(
   $map: (),
-  $prefix: "",
+  $prefix: false,
 ) {
   @each $key, $value in $map {
     @debug $key, $value;
@@ -38,7 +38,7 @@ $sizes: (
   @include spreadMap($sizes);
   @include spreadMap(generateSizes(2), "corner");
   @include spreadMap(generateSizes(4, 4), "a");
-  @include spreadMap(generateSizes(4, 8), "b");
-  @include spreadMap(generateSizes(6, 12), "c");
-  @include spreadMap(generateSizes(12, 12), "d");
+  @include spreadMap(generateSizes(8, 12), "b");
+  @include spreadMap(generateSizes(12, 12), "c");
+  @include spreadMap(generateSizes(16, 24), "d");
 }

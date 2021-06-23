@@ -1,5 +1,5 @@
 @mixin round(
-  $diameter: var(--size-d-l),
+  $diameter: var(--size-c-l),
 ) {
   border-radius: 50%;
   width: $diameter;

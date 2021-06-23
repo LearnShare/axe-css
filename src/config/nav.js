@@ -4,6 +4,10 @@ const navList = [
     value: 'shape',
   },
   {
+    label: 'Size',
+    value: 'size',
+  },
+  {
     label: 'Color',
     children: [
       {
@@ -15,10 +19,6 @@ const navList = [
         value: 'color-dark',
       },
     ],
-  },
-  {
-    label: 'Size',
-    value: 'size',
   },
   {
     label: 'Layout',

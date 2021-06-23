@@ -36,7 +36,7 @@ export default {
   }
 
   .shape-round {
-    @include round(80px);
+    @include round();
     background-color: #CCC;
   }
 </style>
