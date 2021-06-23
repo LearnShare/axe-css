@@ -1,0 +1,44 @@
+@use "sass:map";
+
+$sizes: (
+  s: 1px,
+  m: 2px,
+  l: 3px,
+  xl: 4px,
+);
+
+@mixin spreadMap(
+  $map: (),
+  $prefix: "",
+) {
+  @each $key, $value in $map {
+    @debug $key, $value;
+    @if $prefix {
+      --size-#{$prefix}-#{$key}: #{$value};
+    } @else {
+      --size-#{$key}: #{$value};
+    }
+  }
+}
+
+@function generateSizes(
+  $a: 1,
+  $b: 0,
+) {
+  $map: ();
+
+  @each $key, $value in $sizes {
+    $map: map.set($map, "#{$key}", $value * $a + $b);
+  }
+
+  @return $map;
+}
+
+:root {
+  @include spreadMap($sizes);
+  @include spreadMap(generateSizes(2), "corner");
+  @include spreadMap(generateSizes(4, 4), "a");
+  @include spreadMap(generateSizes(4, 8), "b");
+  @include spreadMap(generateSizes(6, 12), "c");
+  @include spreadMap(generateSizes(12, 12), "d");
+}

@@ -26,7 +26,7 @@ export default {
   }
 
   .shape-rectangle {
-    @include rectangle(80px);
+    @include rectangle();
     background-color: #CCC;
   }
 

@@ -1,7 +1,5 @@
-@import '../../variables.scss';
-
 @mixin rectangle(
-  $x: $size-d-l,
+  $x: var(--size-d-l),
   $y: $x,
   $corner: 0,
 ) {
